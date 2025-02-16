@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DunkWidget extends StatelessWidget {
-  const DunkWidget({super.key});
-
-  onPressed() {
-    print('Dahsee Duck');
-  }
+class DuckWidget extends StatelessWidget {
+  const DuckWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
