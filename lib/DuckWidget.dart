@@ -88,14 +88,14 @@ class _DuckWidgetState extends State<DuckWidget> {
           children: [
             // Conditional rendering of the text
             Text(
-              _health > 0 ? 'GO RUN TO SAVE HIM' : 'GG', // Display "GG" when health reaches 0
-              style: const TextStyle(
-                fontSize: 24, // Font size
-                fontWeight: FontWeight.bold, // Bold text
-                color: Colors.black, // Text color
+                _health > 0 ? (_health > 0.4 ? 'GO RUN TO SAVE HIM' : 'HELP!') :  'GG', // Display "GG" when health reaches 0
+                style: const TextStyle(
+                  fontSize: 24, // Font size
+                  fontWeight: FontWeight.bold, // Bold text
+                  color: Colors.black, // Text color
+                ),
               ),
-            ),
-            const SizedBox(height: 20),
+              const SizedBox(height: 20),
             // Conditional rendering of the duck image based on health
             _health > 0
                 ? Image(
@@ -136,10 +136,6 @@ class _DuckWidgetState extends State<DuckWidget> {
             ),
             const SizedBox(height: 10),
             // Add Health Button
-            ElevatedButton(
-              onPressed: _addHealth, // Calls the add health function
-              child: const Text('Add Health'),
-            ),
           ],
         ),
       ),
