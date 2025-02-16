@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sensors_plus: ^6.1.1
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +21,9 @@ flutter:
 
   assets:
    - assets/Duck.png
+   - assets/Dead.png
+   - assets/DuckWalk1.png
+   - assets/DuckWalk2.png
+   - assets/DuckWalk3.png
+
+  
